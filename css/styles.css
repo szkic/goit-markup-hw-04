@@ -318,6 +318,11 @@ p {
   color: var(--light-grey);
 }
 
+/* OUR CUSTOMERS */
+.customers {
+  text-align: center;
+}
+
 /* FOOTER */
 .contact .container {
   padding: 60px 0px;
