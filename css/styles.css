@@ -10,6 +10,7 @@
   --lightGrey-background-color: #e5e5e5;
   --headerBorder: #ececec;
   --greyBorderPortfolio: #eeeeee;
+  --iconBorder: #afb1b8;
 }
 
 body {
@@ -388,4 +389,27 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.customers-logo {
+  display: flex;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.customer-icon-container {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--iconBorder);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-icon {
+  fill: var(--iconBorder);
 }
