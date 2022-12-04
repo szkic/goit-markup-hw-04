@@ -105,6 +105,10 @@ p {
   color: var(--blue-text);
 }
 
+.header-contact li:hover svg {
+  fill: var(--blue-text);
+}
+
 /* TITLE */
 .title-description {
   color: var(--white);
@@ -362,4 +366,15 @@ p {
 /* lists without styles */
 .list {
   list-style-type: none;
+}
+
+/* HW-04 */
+.header-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.raster {
+  fill: var(--light-grey);
 }
