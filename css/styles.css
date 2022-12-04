@@ -101,12 +101,20 @@ p {
   color: var(--light-grey);
 }
 
-.nav-link:hover,
+/* .nav-link:hover,
 .nav-link:focus {
   color: var(--blue-text);
 }
 
 .header-contact li:hover svg {
+  fill: var(--blue-text);
+} */
+
+.header-contact li:hover .raster,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:focus .raster {
+  color: var(--blue-text);
   fill: var(--blue-text);
 }
 
@@ -370,7 +378,7 @@ p {
 }
 
 /* HW-04 */
-.header-contact li {
+.header-contact a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -397,19 +405,27 @@ p {
 
 .customers-list {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .customer-icon-container {
-  width: 170px;
-  height: 92px;
+  /* width: 170px;
+  height: 92px; */
+  display: block;
+  padding: 16px 32px;
   border: 1px solid var(--iconBorder);
   border-radius: 4px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .customer-icon {
   fill: var(--iconBorder);
+}
+
+.customer-icon-container:hover,
+.customer-icon-container:hover .customer-icon {
+  border-color: var(--blue-text);
+  fill: var(--blue-text);
 }
