@@ -3,6 +3,7 @@
   --black-text: #000;
   --grey-text: #212121;
   --white: #fff;
+  --dimmedWhiteDark: #ffffff1a;
   --light-grey: #757575;
   --dimmed-white: #ffffff60;
   --team-background-color: #f5f4fa;
@@ -21,6 +22,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 ul,
 p {
   margin: 0;
@@ -100,15 +102,6 @@ p {
 .header-contact .nav-link {
   color: var(--light-grey);
 }
-
-/* .nav-link:hover,
-.nav-link:focus {
-  color: var(--blue-text);
-}
-
-.header-contact li:hover svg {
-  fill: var(--blue-text);
-} */
 
 .header-contact li:hover .raster,
 .nav-link:hover,
@@ -249,9 +242,6 @@ p {
   letter-spacing: 0.03em;
   line-height: 1.17;
   color: var(--light-grey);
-
-  /* hw-03 */
-  /* padding-bottom: 30px; */
 }
 
 /* PORTFOLIO */
@@ -409,15 +399,10 @@ p {
 }
 
 .customer-icon-container {
-  /* width: 170px;
-  height: 92px; */
   display: block;
   padding: 16px 32px;
   border: 1px solid var(--iconBorder);
   border-radius: 4px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .customer-icon {
@@ -425,14 +410,12 @@ p {
 }
 
 .customer-icon-container:hover,
-.customer-icon-container:hover .customer-icon {
+.customer-icon-container:hover .customer-icon,
+.customer-icon-container:focus,
+.customer-icon-container:focus .customer-icon {
   border-color: var(--blue-text);
   fill: var(--blue-text);
 }
-
-/* .team-box li {
-  padding: 12px;
-} */
 
 .social-networks {
   display: flex;
@@ -450,11 +433,40 @@ p {
   fill: var(--iconBorder);
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--blue-text);
   border-radius: 50%;
 }
 
-.social-icon:hover svg {
+.social-icon:hover svg,
+.social-icon:focus svg {
   fill: var(--white);
+}
+
+.social-networks-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.social-networks-footer svg {
+  fill: var(--white);
+}
+
+.social-networks-footer a {
+  background-color: var(--dimmedWhiteDark);
+  border-radius: 50%;
+}
+
+.footer-elements {
+  display: flex;
+}
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.social-footer h4 {
+  padding-top: 12px;
+  padding-bottom: 20px;
 }
